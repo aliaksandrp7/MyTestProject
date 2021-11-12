@@ -1,0 +1,17 @@
+;klhgutdstsz
+   Decorator
+Translator
+sfhtwDecorator.;km
+
+$productCatalog = $CATALOG$\n" +
+                "$catalogVersion = catalogversion(catalog(id[default=$productCatalog]), version[default='Staged'])[unique=true, default=$productCatalog:Staged]\n" +
+                "\n" +
+                "#{gjImpexProductModelHeader}\n" +
+                "INSERT_UPDATE PriceRow; productId[unique = true]; price; oldPrice; startTime[dateformat = 'yyyy-MM-dd''T''HH:mm:ss'][unique = true]; currency(isocode)[unique = true][cellDecorator = ru.atc.gj.core.integration.batch.decorators.PriceRowCurrencyDecorator]; type[translator = ru.atc.gj.core.integration.batch.decorators.PriceRowTypeTranslator]; timeStamp[dateformat = 'yyyy-MM-dd''T''HH:mm:ss'][cellDecorator = ru.atc.gj.core.integration.batch.decorators.PriceRowTimeStampDecorator]; endTime[dateformat = 'yyyy-MM-dd''T''HH:mm:ss'][default = 2099-12-31T00:00:00]; unit(code[unique = true, default = pieces]); minqtd[default = 1]; unitFactor[default = 1]; net[default = false];\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "INSERT_UPDATE StockLevel; productCode[unique = true]; warehouse(code)[cellDecorator = ru.atc.gj.core.integration.batch.decorators.WarehouseByCodeOfPointOfServiceCellDecorator][unique = true]; available;\n" +
+                "\n" + WarehouseByCodeOfPointOfServiceCellDecorator]jkn
+                "# Create Stock levels at the Warehouses for Products\n" +
+                "INSERT_UPDATE StockLevel;      available[unique=true];warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved");

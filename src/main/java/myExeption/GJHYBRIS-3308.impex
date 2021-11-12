@@ -1,0 +1,33 @@
+$storeUid = gjStore
+$baseStoreConfigMapTranslator=ru.atc.gj.core.integration.batch.decorators.BaseStoreConfigMapTranslator
+
+# Every value will be ADD to concrete base store (to configMap) and won't to be overriden because of translator(!)
+INSERT_UPDATE BaseStore; uid[unique=true]           ; configMap[translator=$baseStoreConfigMapTranslator]
+                       ; $storeUid                  ; yml.yml.shop.deliverycost:299
+                       ; $storeUid_south            ; yml.yml.shop.deliverycost:399
+                       ; $storeUid_ural             ; yml.yml.shop.deliverycost:399
+                       ; $storeUid_siberia          ; yml.yml.shop.deliverycost:449
+                       ; $storeUid_northwest        ; yml.yml.shop.deliverycost:299
+                       ; $storeUid_volga            ; yml.yml.shop.deliverycost:399
+                       ; $storeUid_far_east         ; yml.yml.shop.deliverycost:449
+                       ; $storeUid_ural_dif         ; yml.yml.shop.deliverycost:399
+                       ; $storeUid_siberia_dif      ; yml.yml.shop.deliverycost:449
+                       ; $storeUid_northwest_dif    ; yml.yml.shop.deliverycost:299
+
+
+
+INSERT_UPDATE BaseStore; uid[unique=true]           ; configMap[translator=$baseStoreConfigMapTranslator]
+                       ; $storeUid                  ; yml.yml.shop.days:2-3
+                       ; $storeUid_south            ; yml.yml.shop.days:3-4
+                       ; $storeUid_ural             ; yml.yml.shop.days:3-5
+                       ; $storeUid_siberia          ; yml.yml.shop.days:3-5
+                       ; $storeUid_northwest        ; yml.yml.shop.days:2-3
+                       ; $storeUid_volga            ; yml.yml.shop.days:3-4
+                       ; $storeUid_far_east         ; yml.yml.shop.days:5-7
+                       ; $storeUid_ural_dif         ; yml.yml.shop.days:3-5
+                       ; $storeUid_siberia_dif      ; yml.yml.shop.days:3-5
+                       ; $storeUid_northwest_dif    ; yml.yml.shop.days:2-3
+
+
+
+
