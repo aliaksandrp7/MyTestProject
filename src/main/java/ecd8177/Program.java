@@ -8,6 +8,7 @@ import java.util.Set;
 public class Program{
 
     public static void main(String[] args) {
+         System.out.println("2 change from github");
 
         Map<Integer, String> states = new HashMap<Integer, String>();
         states.put(1, "Germany");
